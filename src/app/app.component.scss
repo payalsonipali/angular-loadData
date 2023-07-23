@@ -1,0 +1,41 @@
+:host{
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    input{
+        width: 500px;
+        padding: 10px;
+    }
+
+    .row{
+        display: flex;
+        direction: row;
+        align-items: center;
+    }
+
+    img{
+        border-radius: 30px;
+        margin: 10px;
+    }
+
+    p{
+        margin-bottom: 15px;
+    }
+
+    .mat-prog {
+        position: fixed;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+    }
+
+    @keyframes scroll {
+        95% { top: -100%; }
+        100% { top:0; }
+    }
+
+}
