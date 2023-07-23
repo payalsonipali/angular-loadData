@@ -1,3 +1,8 @@
+<div
+  infinite-scroll
+  [infiniteScrollDistance]=2
+  [infiniteScrollThrottle]=500
+  (scrolled)="onScroll()">
 <h1>Load data from api</h1>
 <div class="main">
   <!-- <input type="text" [(ngModel)]="username"  (change)="onChangeUserName()" placeholder="Search username here..."> -->
@@ -15,4 +20,5 @@
       </li>
     </ul>
   </div>
+</div>
 </div>

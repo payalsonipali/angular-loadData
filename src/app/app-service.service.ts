@@ -9,9 +9,9 @@ export class AppServiceService {
 
   constructor(private http:HttpClient) { }
 
-  getUserInfo(search:String):Observable<any>{
+  getUserInfo(search:String, page:number):Observable<any>{
     return this.http.get(
-      `https://api.github.com/search/users?q=${search}`
+      `https://api.github.com/search/users?q=${search}&page=${page}&per_page=10`
     )
   }
 }
